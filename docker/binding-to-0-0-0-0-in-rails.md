@@ -18,5 +18,6 @@ updating the command to run to [Thin], the app loaded fine!
 
 Trevor, one of my coworkers, pointed out the binding flag in WEBrick, which
 needs to be set in order for the server to accept requests from any network
-interface: `rails server -p 3000 -b 0.0.0.0`. In the current version of Thin
-(v1.6.3), it looks as though it defaults to bind to 0.0.0.0 automatically.
+interface: `rails server --binding 0.0.0.0 --port 3000`. In the current
+version of Thin (v1.6.3), it looks as though it defaults to bind to 0.0.0.0
+automatically.
